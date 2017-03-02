@@ -15,4 +15,13 @@
 
     </android.support.wearable.view.GridViewPager>
 
+    <TextView
+        android:id="@+id/remember_word_notification"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#666666"
+        app:layout_box="all"
+        android:layout_gravity="center"
+        android:text="notification"/>
+
 </android.support.wearable.view.BoxInsetLayout>
