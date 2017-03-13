@@ -8,20 +8,11 @@
     tools:context="com.zxtcode.remembertheword.activity.MainActivity"
     tools:deviceIds="wear">
 
-    <android.support.wearable.view.GridViewPager
-        android:id="@+id/remember_word_viewpager"
+    <android.support.wearable.view.WearableRecyclerView
+        android:id="@+id/main_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.wearable.view.GridViewPager>
-
-    <TextView
-        android:id="@+id/remember_word_notification"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="#666666"
-        app:layout_box="all"
-        android:layout_gravity="center"
-        android:text="notification"/>
+    </android.support.wearable.view.WearableRecyclerView>
 
 </android.support.wearable.view.BoxInsetLayout>
