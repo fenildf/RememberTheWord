@@ -5,11 +5,13 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context="com.zxtcode.remembertheword.activity.MainActivity"
     tools:deviceIds="wear">
 
     <android.support.wearable.view.WearableRecyclerView
         android:id="@+id/main_list"
+        app:layout_box="all"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

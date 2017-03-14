@@ -4,4 +4,5 @@
     <string name="notification_next_time">下次</string>
     <string name="notification_remember">记住</string>
     <string name="activity_main_remind_cycle">提醒频率</string>
+    <string name="activity_main_import_word">导入单词</string>
 </resources>

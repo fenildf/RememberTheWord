@@ -28,6 +28,8 @@
         </activity>
         <activity android:name=".activity.RemindMeActivity"/>
         <activity android:name=".activity.RememberWordActivity"/>
+        <activity android:name=".activity.ImportWordActivity"/>
+        <activity android:name=".activity.DictionaryActivity"/>
     </application>
 
 </manifest>

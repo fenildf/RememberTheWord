@@ -2,6 +2,7 @@ package com.zxtcode.remembertheword.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.wearable.activity.WearableActivity;
 import android.support.wearable.view.WearableRecyclerView;
 
@@ -23,8 +24,10 @@ public class MainActivity extends WearableActivity {
 
         List<MainAdapter.Item> itemList = new ArrayList<>();
         itemList.add(new MainAdapter.Item(getString(R.string.activity_main_remind_cycle), new Intent(this, RemindMeActivity.class)));
+        itemList.add(new MainAdapter.Item(getString(R.string.activity_main_import_word), new Intent(this, ImportWordActivity.class)));
 
         mMainList = (WearableRecyclerView) findViewById(R.id.main_list);
+        mMainList.setLayoutManager(new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL, false));
         mMainList.setAdapter(new MainAdapter(MainActivity.this, itemList));
     }
 
